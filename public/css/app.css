@@ -10973,6 +10973,7 @@ a.text-dark:focus {
   line-height: 80px;
   text-decoration: none;
   font-size: 0.9rem;
+  font-weight: bolder;
   color: black;
 }
 
@@ -11015,8 +11016,17 @@ a.text-dark:focus {
   top: 100%;
 }
 
-.comics_list .card_comic h6 {
-  font-size: 0.9rem;
+.comics_list .card_comic {
+  /* .img_comic{
+
+       img{
+
+          }
+  } */
+}
+
+.comics_list .card_comic p {
+  font-size: 0.8rem;
   text-transform: uppercase;
   color: white;
 }

@@ -9,7 +9,7 @@
         <div class="container-xl d-flex justify-content-end">
             <p class="m-0 d-flex">
                 <span class="mr-4 d-flex align-items-start">
-                    DC POWER VISA<i class="mt-1 fas fa-trademark"></i>
+                    DC POWER&trade;VISA&reg;
                 </span>
                 <span class="d-flex align-items-center">
                     ADDITIONAL DC SITES <i class="pl-1 fas fa-sort-down"></i>
@@ -57,7 +57,7 @@
                                 <div class="img_comic">
                                     <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="">
                                 </div>
-                                <h6>{{ $comic['title'] }}</h6>
+                                <p>{{ $comic['series'] }}</p>
                             </div> 
                     @endforeach
                 </div>
