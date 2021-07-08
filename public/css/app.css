@@ -11001,3 +11001,18 @@ a.text-dark:focus {
   text-align: end;
 }
 
+.comics_main {
+  height: 375px;
+  background-image: url("/../img/jumbotron.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.comics_list {
+  height: 300px;
+  width: 100%;
+  background-color: #1c1c1c;
+  position: absolute;
+  top: 100%;
+}
+

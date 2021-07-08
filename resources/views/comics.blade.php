@@ -46,7 +46,13 @@
 
 {{-- Main Content --}}
 @section('main_content')
+<div class="comics_main">
 
+   <div class="comics_list">
+
+    </div> 
+
+</div>
 
 
 
