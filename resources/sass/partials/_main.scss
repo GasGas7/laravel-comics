@@ -7,9 +7,25 @@
 }
 
 .comics_list {
-    height: 300px;
     width: 100%;
     background-color: #1c1c1c;
     position: absolute;
     top: 100%;
+
+    .card_comic{
+        
+        .img_comic{
+           
+             img{
+                 
+                 
+                }
+        }
+
+        h6{
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
 }

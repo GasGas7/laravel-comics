@@ -22,8 +22,9 @@
         <div class="container-xl">
             <div class="links_img d-flex align-items-center justify-content-between">
                 <img src="{{ asset('img/dc-logo.png') }}" alt="">
-                <a href="#" >CHARACTERS</a>
-                <a href="{{ route('comics') }}" class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">COMICS</a>
+                <a href="#">CHARACTERS</a>
+                <a href="{{ route('comics') }}"
+                    class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">COMICS</a>
                 <a href="#">MOVIES</a>
                 <a href="#">TV</a>
                 <a href="#">GAMES</a>
@@ -46,16 +47,23 @@
 
 {{-- Main Content --}}
 @section('main_content')
-<div class="comics_main">
+    <div class="comics_main">
 
-   <div class="comics_list">
+        <div class="comics_list">
+            <div class="container-xl p-0 d-flex flex-wrap">
+                @foreach ($comics as $comic)
+                    
+                        <div class="card_comic col-2 p-2">
+                            <div class="img_comic">
+                                <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="">
+                            </div>
+                            <h6>{{ $comic['title'] }}</h6>
+                        </div>        
 
-    </div> 
-
-</div>
-
-
-
+                @endforeach
+            </div>
+        </div>
+    </div>
 
 @endsection
 {{-- /Main Content --}}
