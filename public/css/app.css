@@ -10960,6 +10960,10 @@ a.text-dark:focus {
   border-bottom: 2px solid #0282F9;
 }
 
+.logo_navbar {
+  margin: 20px 0px;
+}
+
 .logo_navbar img {
   height: 80px;
 }
