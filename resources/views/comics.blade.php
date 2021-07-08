@@ -51,16 +51,16 @@
 
         <div class="comics_list">
             <div class="container-xl p-0 d-flex flex-wrap">
-                @foreach ($comics as $comic)
-                    
-                        <div class="card_comic col-2 p-2">
-                            <div class="img_comic">
-                                <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="">
-                            </div>
-                            <h6>{{ $comic['title'] }}</h6>
-                        </div>        
-
-                @endforeach
+                <div class="row">
+                    @foreach ($comics as $comic)
+                            <div class="card_comic col-2 p-2 mt-5">
+                                <div class="img_comic">
+                                    <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="">
+                                </div>
+                                <h6>{{ $comic['title'] }}</h6>
+                            </div> 
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
