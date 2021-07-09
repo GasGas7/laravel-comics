@@ -41,7 +41,7 @@
                     <img src="{{ asset('img/dc-logo.png') }}" alt="">
                     <a href="#">CHARACTERS</a>
                     <a href="{{ route('comics') }}"
-                        class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">COMICS</a>
+                        class="{{ Route::currentRouteName() === 'comics' || 'comics/{id}' ? 'active' : ''  }}">COMICS</a>
                     <a href="#">MOVIES</a>
                     <a href="#">TV</a>
                     <a href="#">GAMES</a>
@@ -70,7 +70,7 @@
     {{-- Site_footer --}}
     <footer id="site_footer">
         
-        
+
 
 
 

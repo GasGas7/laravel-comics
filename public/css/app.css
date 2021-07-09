@@ -11025,3 +11025,24 @@ a.text-dark:focus {
   color: white;
 }
 
+.single_comic {
+  width: 100%;
+  height: 100px;
+  background-color: #0282F9;
+  position: relative;
+  top: 100%;
+}
+
+.single_comic .card_comic {
+  position: absolute;
+  left: 24%;
+  bottom: 0%;
+}
+
+.single_comic .card_comic p {
+  padding-top: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: white;
+}
+
