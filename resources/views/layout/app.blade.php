@@ -39,7 +39,16 @@
             <div class="container-xl">
                 <div class="links_img d-flex align-items-center justify-content-between">
                     <img src="{{ asset('img/dc-logo.png') }}" alt="">
-                    <a href="#">CHARACTERS</a>
+
+                    <ul>
+                        @foreach ($menu as $item)
+
+                        <li><a href="{{$item['href']}}">{{$item['text']}}</a></li>
+                            
+                        @endforeach
+                    </ul>
+
+                    {{-- <a href="#">CHARACTERS</a>
                     <a href="{{ route('comics') }}"
                         class="{{ Route::currentRouteName() === 'comics' || 'comics/{id}' ? 'active' : ''  }}">COMICS</a>
                     <a href="#">MOVIES</a>
@@ -49,7 +58,7 @@
                     <a href="#">VIDEOS</a>
                     <a href="#">FANS</a>
                     <a href="#">NEWS</a>
-                    <a href="#">SHOP</a>
+                    <a href="#">SHOP</a> --}}
                     <div class="search">
                         <input type="text" placeholder="Search">
                         <i class="fas fa-search"></i>

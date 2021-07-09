@@ -8,7 +8,6 @@
 {{-- Main Content --}}
 @section('main_content')
     <div class="comics_main">
-
         <div class="single_comic">
             <div class="container-xl p-0 d-flex flex-wrap">
                 <div class="row mt-4">
