@@ -51,9 +51,9 @@
 
         <div class="comics_list">
             <div class="container-xl p-0 d-flex flex-wrap">
-                <div class="row">
+                <div class="row mt-4">
                     @foreach ($comics as $comic)
-                            <div class="card_comic col-2 p-2 mt-5">
+                            <div class="card_comic col-2 p-2">
                                 <div class="img_comic">
                                     <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="">
                                 </div>
