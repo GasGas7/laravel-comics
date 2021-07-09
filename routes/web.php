@@ -35,3 +35,11 @@ Route::get('comics/{id}', function($id){
         abort(404);
     }
 })-> name('comic');
+
+//route di tutti i fumetti;
+Route::get('/movies', function () {
+
+   
+
+    return view('movies');
+})-> name ('movies');

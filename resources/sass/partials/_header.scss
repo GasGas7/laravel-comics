@@ -20,6 +20,7 @@
 .logo_navbar {
     img {
         height: 80px;
+
     }
     ul {
         margin:0;
@@ -28,10 +29,10 @@
         width: 70%;
         li {
             list-style: none;
+            
             a {
+                padding-bottom: 1.2rem;
                 text-transform: uppercase;
-                height: 100px;
-                line-height: 100px;
                 text-decoration: none;
                 font-size: 0.7rem;
                 font-weight: bolder;

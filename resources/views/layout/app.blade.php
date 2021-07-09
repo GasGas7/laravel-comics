@@ -38,13 +38,13 @@
         <nav class="logo_navbar">
             <div class="container-xl">
                 <div class="links_img d-flex align-items-center justify-content-between">
-                    <img src="{{ asset('img/dc-logo.png') }}" alt="">
+                    <img class="py-2" src="{{ asset('img/dc-logo.png') }}" alt="">
 
                     <ul>
-                        @foreach (config('menu') as $item)
-
+                        @foreach (config('menu') as $index => $item)
+                            
                             <li>
-                                <a href="{{ $item['href'] }}">
+                                <a href="{{ $item['href'] }}"  class="{{ Route::currentRouteName() === $item['text'] ? 'active' : ''  }}">
                                     {{ $item['text'] }}
                                 </a>
                             </li>

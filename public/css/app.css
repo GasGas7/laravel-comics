@@ -10976,9 +10976,8 @@ a.text-dark:focus {
 }
 
 .logo_navbar ul li a {
+  padding-bottom: 1.2rem;
   text-transform: uppercase;
-  height: 100px;
-  line-height: 100px;
   text-decoration: none;
   font-size: 0.7rem;
   font-weight: bolder;
