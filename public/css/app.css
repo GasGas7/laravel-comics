@@ -10943,7 +10943,7 @@ a.text-dark:focus {
 }
 
 .blue_nav {
-  background-color: #0282F9;
+  background-color: #0282f9;
   color: white;
 }
 
@@ -10956,15 +10956,27 @@ a.text-dark:focus {
 }
 
 .active {
-  color: #0282F9 !important;
-  border-bottom: 5px solid #0282F9;
+  color: #0282f9 !important;
+  border-bottom: 5px solid #0282f9;
 }
 
 .logo_navbar img {
   height: 80px;
 }
 
-.logo_navbar a {
+.logo_navbar ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.logo_navbar ul li {
+  list-style: none;
+}
+
+.logo_navbar ul li a {
+  text-transform: uppercase;
   height: 100px;
   line-height: 100px;
   text-decoration: none;
@@ -10974,7 +10986,7 @@ a.text-dark:focus {
 }
 
 .logo_navbar .search {
-  border-bottom: 2px solid #0282F9;
+  border-bottom: 2px solid #0282f9;
 }
 
 .logo_navbar .search input {

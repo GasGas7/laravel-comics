@@ -41,10 +41,14 @@
                     <img src="{{ asset('img/dc-logo.png') }}" alt="">
 
                     <ul>
-                        @foreach ($menu as $item)
+                        @foreach (config('menu') as $item)
 
-                        <li><a href="{{$item['href']}}">{{$item['text']}}</a></li>
-                            
+                            <li>
+                                <a href="{{ $item['href'] }}">
+                                    {{ $item['text'] }}
+                                </a>
+                            </li>
+
                         @endforeach
                     </ul>
 
@@ -78,7 +82,7 @@
 
     {{-- Site_footer --}}
     <footer id="site_footer">
-        
+
 
 
 

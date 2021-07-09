@@ -13,12 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/menu', function () {
 
-    $menu=config('menu');
-
-    return view('layout.app', compact('menu'));
-})-> name ('menu');
 
 
 //route di tutti i fumetti;

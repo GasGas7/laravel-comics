@@ -1,5 +1,5 @@
 .blue_nav {
-    background-color: #0282F9;
+    background-color: #0282f9;
     color: white;
     p {
         font-size: 0.5rem;
@@ -12,40 +12,44 @@
     }
 }
 
-
-.active{
-    color: #0282F9!important;
-    border-bottom: 5px solid #0282F9;
+.active {
+    color: #0282f9 !important;
+    border-bottom: 5px solid #0282f9;
 }
 
-
 .logo_navbar {
-    img{
-        height:  80px;
+    img {
+        height: 80px;
+    }
+    ul {
+        margin:0;
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        li {
+            list-style: none;
+            a {
+                text-transform: uppercase;
+                height: 100px;
+                line-height: 100px;
+                text-decoration: none;
+                font-size: 0.7rem;
+                font-weight: bolder;
+                color: black;
+            }
+        }
     }
 
-    a{  
-        height: 100px;
-        line-height: 100px;
-        text-decoration: none;
-        font-size: 0.7rem;
-        font-weight:bolder;
-        color: black;
-    }
-    .search{
-        border-bottom: 2px solid #0282F9;
-        input{
+    .search {
+        border-bottom: 2px solid #0282f9;
+        input {
             border-style: none;
             width: 100px;
             font-size: 0.8rem;
-            &::placeholder{
+            &::placeholder {
                 color: black;
                 text-align: end;
             }
         }
     }
 }
-
-
-
-
