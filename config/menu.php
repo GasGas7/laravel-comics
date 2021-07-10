@@ -4,13 +4,16 @@ return [
     [
         'href' => "/characters",
         'text' => "characters"
-    ], [
+    ],
+    [
         'href' => "/comics",
         'text' => "comics"
-    ], [
+    ],
+    [
         'href' => "/movies",
         'text' => "movies"
-    ], [
+    ],
+    [
         'href' => "/tv",
         'text' => "tv"
     ],
@@ -19,23 +22,23 @@ return [
         'text' => "games"
     ],
     [
-        'href'=> "/collectibles",
-        'text'=>"collectibles"
+        'href' => "/collectibles",
+        'text' => "collectibles"
     ],
     [
-        'href'=> "/videos",
-        'text'=>"videos"
+        'href' => "/videos",
+        'text' => "videos"
     ],
     [
-        'href'=> "/fans",
-        'text'=>"fans"
+        'href' => "/fans",
+        'text' => "fans"
     ],
     [
-        'href'=> "/news",
-        'text'=>"news"
+        'href' => "/news",
+        'text' => "news"
     ],
     [
-        'href'=> "/shop",
-        'text'=>"shop"
+        'href' => "/shop",
+        'text' => "shop"
     ]
 ];
