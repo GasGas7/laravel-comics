@@ -3,42 +3,52 @@
 return [
     [
         'href' => "/characters",
-        'text' => "characters"
+        'text' => "characters",
+        'singlePage' => "character"
     ],
     [
         'href' => "/comics",
-        'text' => "comics"
+        'text' => "comics",
+        'singlePage' => "comic"
     ],
     [
         'href' => "/movies",
-        'text' => "movies"
+        'text' => "movies",
+        'singlePage' => "movie"
     ],
     [
         'href' => "/tv",
-        'text' => "tv"
+        'text' => "tv",
+        'singlePage' => "tv"
     ],
     [
         'href' => "/games",
-        'text' => "games"
+        'text' => "games",
+        'singlePage' => "comic"
     ],
     [
         'href' => "/collectibles",
-        'text' => "collectibles"
+        'text' => "collectibles",
+        'singlePage' => "comic"
     ],
     [
         'href' => "/videos",
-        'text' => "videos"
+        'text' => "videos",
+        'singlePage' => "comic"
     ],
     [
         'href' => "/fans",
-        'text' => "fans"
+        'text' => "fans",
+        'singlePage' => "comic"
     ],
     [
         'href' => "/news",
-        'text' => "news"
+        'text' => "news",
+        'singlePage' => "comic"
     ],
     [
         'href' => "/shop",
-        'text' => "shop"
+        'text' => "shop",
+        'singlePage' => "comic"
     ]
 ];

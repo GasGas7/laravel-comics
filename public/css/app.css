@@ -11036,6 +11036,43 @@ a.text-dark:focus {
   color: white;
 }
 
+.comics_list .pos_rel_container {
+  position: relative;
+}
+
+.comics_list .pos_rel_container .row {
+  margin: 3rem 0 3.3rem 0;
+}
+
+.comics_list .pos_rel_container .button_top {
+  color: white;
+  font-weight: 800;
+  font-size: 1.3rem;
+  text-align: center;
+  position: absolute;
+  bottom: 96%;
+  right: 75%;
+  padding: 10px 40px;
+  width: 330px;
+  background-color: #0282F9;
+}
+
+.comics_list .pos_rel_container .button_a_bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 30px;
+  width: 250px;
+  background-color: #0282F9;
+  cursor: pointer;
+}
+
 .single_comic {
   width: 100%;
   height: 100px;

@@ -28,8 +28,10 @@ Route::get('/comics', function () {
 Route::get('comics/{id}', function($id){
     $comics=config('comics');
 
+
     if(is_numeric($id) && $id < count($comics) && $id >= 0 ){
         $comic = $comics[$id];
+        #dd($comic);
         return view ('comics.show', compact('comic'));
     } else {
         abort(404);

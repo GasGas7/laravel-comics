@@ -34,37 +34,28 @@
                 </p>
             </div>
         </div>
-{{-- dd({{if(Route::currentRouteName() === $item['text']."/".$index){ echo '<p> hello </p>'}else{ echo '<p> byebyebeybyebye </p>'}}})
- --}}        <nav class="logo_navbar">
+        {{-- dd({{if(Route::currentRouteName() === $item['text']."/".$index){ echo '<p> hello </p>'}else{ echo '<p> byebyebeybyebye </p>'}}}) --}} <nav class="logo_navbar">
             <div class="container-xl">
                 <div class="links_img d-flex align-items-center justify-content-between">
                     <img class="py-2" src="{{ asset('img/dc-logo.png') }}" alt="">
 
                     <ul>
-                        @foreach (config('menu') as $index => $item)
-                            dd({{$item['text']."/".$index}})
-                            
-                            
-                            <li>
-                                <a href="{{ $item['href'] }}"  class="{{Route::currentRouteName() === $item['text'] || Route::currentRouteName() === $item['text']."/".$index ? 'active' : ''  }}">
-                                    {{ $item['text'] }}
-                            </a> 
-                            </li> 
 
+                        {{-- @php
+                        $uri = $request->path()
+
+                        d($uri);
+                        @endphp --}}
+                        @foreach (config('menu') as $index => $item)
+                            <li>
+                                <a href="{{ $item['href'] }}"
+                                    class="{{ Route::currentRouteName() === $item['text'] ? 'active' : '' }}">
+                                    {{ $item['text'] }}
+                                </a>
+                            </li>
+                            {{-- || $item['text']."/".$index ................@php($uri)@endphp === $item['text']."/".$index --}}
                         @endforeach
                     </ul>
-
-                    {{-- <a href="#">CHARACTERS</a>
-                    <a href="{{ route('comics') }}"
-                        class="{{ Route::currentRouteName() === 'comics' || 'comics/{id}' ? 'active' : ''  }}">COMICS</a>
-                    <a href="#">MOVIES</a>
-                    <a href="#">TV</a>
-                    <a href="#">GAMES</a>
-                    <a href="#">COLLECTIBLES</a>
-                    <a href="#">VIDEOS</a>
-                    <a href="#">FANS</a>
-                    <a href="#">NEWS</a>
-                    <a href="#">SHOP</a> --}}
                     <div class="search">
                         <input type="text" placeholder="Search">
                         <i class="fas fa-search"></i>
@@ -84,8 +75,6 @@
 
     {{-- Site_footer --}}
     <footer id="site_footer">
-
-
 
 
 
