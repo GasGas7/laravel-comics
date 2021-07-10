@@ -34,20 +34,22 @@
                 </p>
             </div>
         </div>
-
-        <nav class="logo_navbar">
+{{-- dd({{if(Route::currentRouteName() === $item['text']."/".$index){ echo '<p> hello </p>'}else{ echo '<p> byebyebeybyebye </p>'}}})
+ --}}        <nav class="logo_navbar">
             <div class="container-xl">
                 <div class="links_img d-flex align-items-center justify-content-between">
                     <img class="py-2" src="{{ asset('img/dc-logo.png') }}" alt="">
 
                     <ul>
                         @foreach (config('menu') as $index => $item)
+                            dd({{$item['text']."/".$index}})
+                            
                             
                             <li>
-                                <a href="{{ $item['href'] }}"  class="{{ Route::currentRouteName() === $item['text'] ? 'active' : ''  }}">
+                                <a href="{{ $item['href'] }}"  class="{{Route::currentRouteName() === $item['text'] || Route::currentRouteName() === $item['text']."/".$index ? 'active' : ''  }}">
                                     {{ $item['text'] }}
-                                </a>
-                            </li>
+                            </a> 
+                            </li> 
 
                         @endforeach
                     </ul>

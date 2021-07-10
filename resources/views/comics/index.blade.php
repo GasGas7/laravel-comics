@@ -1,6 +1,5 @@
 @extends('layout.app')
 
-
 {{-- Main Content --}}
 @section('main_content')
     <div class="comics_main">
