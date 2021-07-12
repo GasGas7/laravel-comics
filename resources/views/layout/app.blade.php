@@ -38,14 +38,7 @@
             <div class="container-xl">
                 <div class="links_img d-flex align-items-center justify-content-between">
                     <img class="py-2" src="{{ asset('img/dc-logo.png') }}" alt="">
-
                     <ul>
-
-                        {{-- @php
-                        $uri = $request->path()
-
-                        d($uri);
-                        @endphp --}}
                         @foreach (config('menu') as $index => $item)
                             <li>
                                 <a href="{{ $item['href'] }}"
@@ -53,9 +46,8 @@
                                     {{ $item['text'] }}
                                 </a>
                             </li>
-                            {{-- || $item['text']."/".$index ................@php($uri)@endphp === $item['text']."/".$index --}}
                         @endforeach
-                    </ul>
+                    </ul>                   
                     <div class="search">
                         <input type="text" placeholder="Search">
                         <i class="fas fa-search"></i>
