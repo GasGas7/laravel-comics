@@ -24,31 +24,31 @@ return [
     [
         'href' => "/games",
         'text' => "games",
-        'singlePage' => "comic"
+        'singlePage' => "game"
     ],
     [
         'href' => "/collectibles",
         'text' => "collectibles",
-        'singlePage' => "comic"
+        'singlePage' => "collectible"
     ],
     [
         'href' => "/videos",
         'text' => "videos",
-        'singlePage' => "comic"
+        'singlePage' => "video"
     ],
     [
         'href' => "/fans",
         'text' => "fans",
-        'singlePage' => "comic"
+        'singlePage' => "fan"
     ],
     [
         'href' => "/news",
         'text' => "news",
-        'singlePage' => "comic"
+        'singlePage' => "news"
     ],
     [
         'href' => "/shop",
         'text' => "shop",
-        'singlePage' => "comic"
+        'singlePage' => "shop"
     ]
 ];

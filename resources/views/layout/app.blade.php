@@ -49,7 +49,7 @@
                         @foreach (config('menu') as $index => $item)
                             <li>
                                 <a href="{{ $item['href'] }}"
-                                    class="{{ Route::currentRouteName() === $item['text'] ? 'active' : '' }}">
+                                    class="{{ Route::currentRouteName() === $item['text'] || Route::currentRouteName() === $item['singlePage'] ? 'active' : '' }}">
                                     {{ $item['text'] }}
                                 </a>
                             </li>
